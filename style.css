@@ -1,0 +1,120 @@
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Outfit', sans-serif;
+    }
+    
+    body {
+        background-color: hsl(217, 54%, 11%)
+    }
+    
+    .container {
+        width: 300px;
+        margin: 100px auto;
+        background-color: hsl(216, 50%, 16%);
+        border-radius: 10px;
+        padding: 20px;
+    }
+    
+    .container .main-image {
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    .overlay-container {
+        position: relative;
+        transition: 0.5s;
+    }
+    
+    .overlay {
+        transition: 1s;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: 10px;
+        background-color: rgb(0, 255, 247, 0.5);
+        display: flex;
+        opacity: 0;
+        justify-content: center;
+        align-items: center;
+        height: 260px;
+    }
+    
+    .overlay-container:hover .overlay {
+        opacity: 1
+    }
+    
+    .overlay img {
+        z-index: 3;
+    }
+    
+    .content .header {
+        padding: 20px 0;
+        color: white;
+        transition: 0.5s;
+    }
+    
+    .content .header:hover {
+        color: hsl(178, 100%, 50%);
+    }
+    
+    .content p {
+        color: #506584;
+        font-size: 18px;
+        padding-bottom: 20px;
+    }
+    
+    .price-date {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .price-date .price {
+        color: hsl(178, 100%, 50%);
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .price-date img {
+        align-self: center;
+        margin-right: 5px;
+    }
+    
+    .date {
+        display: flex;
+        color: #506584
+    }
+    
+    hr {
+        margin: 20px 0;
+        color: hsl(215, 32%, 27%)
+    }
+    
+    .author-info {
+        display: flex;
+        align-items: center;
+    }
+    
+    .author-info .author-image img {
+        border: 1px solid white;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .author-info p {
+        align-items: center;
+        padding: 0 0 10px 15px;
+    }
+    
+    .author-info .author-name {
+        color: white;
+        transition: 0.5s;
+    }
+    
+    .author-info .author-name:hover {
+        color: hsl(178, 100%, 50%);
+    }
